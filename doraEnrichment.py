@@ -40,7 +40,8 @@ def parseInput(inputData):
                 resp['tags']['component']=component
         file.close()
         final_measurement=""
-        final_measurement+=resp['measurement']+","
+        #final_measurement+=resp['measurement']+","
+        final_measurement+="dora_metrics,"
         final_measurement+=str(json.dumps(resp['tags'],separators=(",", "="))).strip('{').strip('}').replace('"','').replace(' ','\ ') + " "
         final_measurement+=' ' + valsAndTimestamp
     except:
