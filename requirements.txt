@@ -1,7 +1,2 @@
-http.server
-line_protocol_parser
-json
-os
-sys
-re
+httpserver
 requests
